@@ -1,0 +1,111 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the success stories and impact of Mabaso Foundation through our inspiring gallery. See how your contributions are making a positive change in the lives of underprivileged children.">
+        <title>Gallery</title>
+        <link rel="icon" href="/images/Mabaso.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="/images/Mabaso.png" alt="Mabaso Foundation Logo" width="140" height="150">
+                <h1>Mabaso Foundation</h1>
+                <p>Empowering Education for All</p>
+            </div>
+            <nav class="nav">
+                <a href="homepage.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </header>
+        <hr>
+        <section class="content-section">
+            <div class="content">
+                <h2>Success Stories</h2>
+                <p>Explore inspiring narratives of young learners who have overcome adversity with your support. These stories highlight the remarkable achievements and milestones these children have reached, despite facing challenging circumstances. Each success story is a testament to the transformative power of education and the unwavering resilience of our beneficiaries.</p>
+            </div>
+            <div class="content">
+                <h2><ins>Join Us in Celebrating:</ins></h2>
+                <p>As you explore our gallery, we hope you'll feel a sense of pride and accomplishment. These images and stories are a celebration of our collective efforts and a reminder of the profound impact we can achieve when we come together for a common cause. It's a testament to the fact that every act of kindness, no matter how small, has the power to change lives.</p>
+            </div>
+        </section>
+        <main>
+            <div class="gallery">
+                <!-- Gallery images with lightbox functionality -->
+                <img src="/images/1.jpg" alt="Image 1" onclick="openLightbox('/images/1.jpg')">
+                <img src="/images/2.d.jpg" alt="Image 2" onclick="openLightbox('/images/2.d.jpg')">
+                <img src="/images/3..jpg" alt="Image 3" onclick="openLightbox('/images/3..jpg')">
+                <!-- Add more images as needed -->
+                <img src="/images/4.jpg" alt="Image 4" onclick="openLightbox('/images/4.jpg')">
+                <img src="/images/1.d.png" alt="Image 5" onclick="openLightbox('/images/1.d.png')">
+                <img src="/images/5.jpg" alt="Image 6" onclick="openLightbox('/images/5.jpg')">
+            </div>
+        </main>
+        <div class="content">
+            <h2 class="subheading">Beautiful Images</h2>
+            <p class="subtext">Celebrating Success and Impact</p>
+            <p><strong class="impact-heading">Positive Impact:</strong> Immerse yourself in a visual narrative of the tangible changes we've brought about in the lives of these children. Our gallery showcases heartwarming moments captured during our initiatives, from the joy of receiving a new school uniform to the smiles that light up their faces when they enjoy a nutritious meal. Witness the tangible expressions of gratitude and hope that your contributions have ignited.</p>
+        </div>
+        <div class="content">
+            <h2 class="subheading">Join the Transformation</h2>
+            <p class="subtext">Be a Part of Their Journey</p>
+            <p>Visit our gallery page and become a part of the transformative journey. Your continued support fuels these success stories and ensures that more children can experience the life-changing effects of education, nourishment, and hope. Together, let's create brighter futures and write even more success stories for these deserving children.</p>
+        </div>
+        </h3><hr><br><br><hr>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="quick-links">
+                <a href="homepage.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faq.html">FAQ</a>
+                    </div>
+                    <br>
+                    <div class="social-media">
+                    
+                        <a href="https://twitter.com/AdoptaSchoolSA"> <img src="/images/Twitter-X-Logo-PNG-1.jpg" alt="Twitter" class="social-icon"></a>
+                <a href="https://www.facebook.com/adoptaschoolfoundation"> <img src="/images/facebook-2935402_640.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com/adoptaschoolfoundation1008/"> <img src="/images/icon-1562139_640.png" alt="Instagram" class="social-icon"></a>
+    
+                    </div>
+                    <div class="copyright">
+                        &copy; 2023 Your Website Name. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!-- Lightbox overlay and image container -->
+    <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+        <img src="" alt="Lightbox Image" class="lightbox-image" id="lightbox-img">
+    </div>
+
+    <!-- Add this script at the end of your body content -->
+    <script src="path/to/lightbox.min.js"></script>
+    <script>
+        // Function to open the lightbox with a specific image
+        function openLightbox(imageSrc) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = imageSrc;
+            lightbox.style.display = 'flex';
+        }
+
+        // Function to close the lightbox
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+
+
+    </body>
+    </html>
